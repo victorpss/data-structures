@@ -5,6 +5,7 @@
 
 clock_t start, end;
 
+/* Complexity: O(n^2) */
 void selectionSort(int arr[], int size){
     int i, j;
 

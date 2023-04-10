@@ -5,6 +5,7 @@
 
 clock_t start, end;
 
+/* Complexity: O(n log(n)) */
 int mergeSort(int size){
     //ToDo implement me!!
 }
@@ -12,16 +13,18 @@ int mergeSort(int size){
 int main(void){
 
     int size = 500;
+    int *arr = generateRandomArray(size);
 
     start = clock();
 
-    printf("Aqui foi\n");
-    generateRandomArray(size);
+    //ToDo mergeSort(arr, size){}
 
     end = clock();
 
     printDuration(start, end);
+    checkIfSorted(arr, size);
 
+    free(arr);
 
     return 0;
 }
